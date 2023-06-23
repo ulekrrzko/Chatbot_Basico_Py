@@ -7,7 +7,7 @@ load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
 openai.api_key = api_key
 
-def preguntar_chat_gpt(prompt, modelo="text-davinvi-002")
+def preguntar_chat_gpt(prompt, modelo="text-davinci-002")
     respuesta = openai.Completion.create(
         engine=modelo,
         prompt=prompt,
